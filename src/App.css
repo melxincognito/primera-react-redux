@@ -53,7 +53,7 @@ button {
 }
 button:hover {
   background-color: rgba(102, 11, 11, 0.664);
-  animation: wobble 1s 1;
+  animation: spin 1s 1;
 }
 
 body {
@@ -72,5 +72,14 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
