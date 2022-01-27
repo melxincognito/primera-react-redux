@@ -35,6 +35,11 @@
   background-color: rgba(255, 255, 255, 0.664);
 }
 
+.accountInfo:hover {
+  animation: wobble 1s 1;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
 .depositWithdrawBtns {
   display: grid;
   width: 30%;
@@ -62,10 +67,10 @@ body {
 
 @keyframes wobble {
   25% {
-    transform: rotate(15deg);
+    transform: rotate(5deg);
   }
   50% {
-    transform: rotate(-30deg);
+    transform: rotate(-5deg);
   }
   75% {
     transform: rotate(5deg);
