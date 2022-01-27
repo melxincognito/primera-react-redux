@@ -58,7 +58,7 @@ button {
 }
 button:hover {
   background-color: rgba(102, 11, 11, 0.664);
-  animation: spin 1s 1;
+  animation: spin 1.5s 1;
 }
 
 body {
