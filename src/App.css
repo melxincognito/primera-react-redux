@@ -1,15 +1,22 @@
 .App {
-  text-align: center;
-  background-color: rgba(255, 152, 67, 0.733);
+  display: flex-box;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
   gap: 10px;
   font-family: "Josefin Sans", sans-serif;
+  border: solid white;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.212);
+  width: 90%;
+  height: 850px;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 45px auto;
   border: solid rgb(255, 255, 255);
   background-color: rgba(182, 94, 182, 0.438);
   border-radius: 25px;
@@ -25,7 +32,7 @@
   align-content: center;
   justify-content: center;
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.363);
+  background-color: rgba(255, 255, 255, 0.664);
 }
 
 .depositWithdrawBtns {
@@ -42,11 +49,28 @@ button {
   font-size: 20px;
   color: white;
   font-family: "Josefin Sans", sans-serif;
+  margin: 10px 0px;
 }
 button:hover {
   background-color: rgba(102, 11, 11, 0.664);
+  animation: wobble 1s 1;
 }
 
 body {
-  background-color: rgba(255, 152, 67, 0.733);
+  background-color: rgba(255, 152, 67, 0.856);
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
